@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC06Mod04Act01.MainPage">
+
+    <StackLayout>
+        <Label Text="Kenan Kerl T. Punsalang" HorizontalTextAlignment="Center" TextColor="White" FontSize="36">
+            <Label.GestureRecognizers>
+                <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="Xamarin" HorizontalTextAlignment="Center" TextColor="White" FontSize="36">
+            <Label.GestureRecognizers>
+                <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+
+        <Frame>
+            <Frame.GestureRecognizers>
+                <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
